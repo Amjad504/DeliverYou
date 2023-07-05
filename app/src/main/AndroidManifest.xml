@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+
+
+    <application
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeliverYou"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".Support"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Support_Chat"
+            android:exported="false" />
+        <activity
+            android:name=".MasterCard_screen"
+            android:exported="false" />
+        <activity
+            android:name=".VisaCard_screen"
+            android:exported="false" />
+        <activity
+            android:name=".Paypal_screen"
+            android:exported="false" />
+        <activity
+            android:name=".Payment_Screens"
+            android:exported="false" />
+        <activity
+            android:name=".Specific_Delivery"
+            android:exported="false" />
+        <activity
+            android:name=".Driver_Goods_Delivery"
+            android:exported="false" />
+        <activity
+            android:name=".Carpool_Chat"
+            android:exported="false" />
+        <activity
+            android:name=".Specific_Carpool"
+            android:exported="false" />
+        <activity
+            android:name=".Carpool_request_list"
+            android:exported="false" />
+        <activity
+            android:name=".Driver_Options"
+            android:exported="false" />
+        <activity
+            android:name=".Confirm_delivery"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_Small_Goods"
+            android:exported="false" />
+        <activity
+            android:name=".Waiting_driver"
+            android:exported="false" />
+        <activity
+            android:name=".Customer_date_time"
+            android:exported="false" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/my_map_api" />
+
+        <activity
+            android:name=".Customer_carpool_map"
+            android:exported="false"
+            android:label="@string/title_activity_customer_carpool_map"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name=".Customer_Delivery_Option"
+            android:exported="false" />
+        <activity
+            android:name=".Verify_lisence"
+            android:exported="false" />
+        <activity
+            android:name=".Signup_Driver2"
+            android:exported="false" />
+        <activity
+            android:name=".Signup_Driver1"
+            android:exported="false" />
+        <activity
+            android:name=".Phone_verification"
+            android:exported="false" />
+        <activity
+            android:name=".Signup_customer"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Sign_Up_activity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
